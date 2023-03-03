@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -70,23 +71,54 @@
     <main>
       <div class="d-flex justify-content-center align-items-center row">
         <div class="col-lg-5 col-md-6 main-photo mt-5">
-          <img src="./medias/image-product-1.jpg" alt="" />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./medias/image-product-1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./medias/image-product-2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./medias/image-product-3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./medias/image-product-4.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <h6 class="text-uppercase" >sneaker company</h6>
-          <h1>Fall Limited Edition <br> Sneakers</h1>
-          <p>these low-profile are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they'll withstand
-            evetything the weather can offer.
+        <div class="col-lg-4 col-md-6 col-9 pt-4">
+          <h6 class="text-uppercase">sneaker company</h6>
+          <h1>
+            Fall Limited Edition <br />
+            Sneakers
+          </h1>
+          <p>
+            these low-profile are your perfect casual wear companion. Featuring
+            a durable rubber outer sole, they'll withstand evetything the
+            weather can offer.
           </p>
-          <h3 class="price"><b>$125.00</b></h3>
+          <div class="d-flex">
+            <div>
+              <h3><b>$125.00</b></h3>
+              <span class="old-price">$250.00</span>
+            </div>
+            <div class="ps-3 pt-1"><span class="badge">50%</span></div>
+          </div>
+          <button class="btn add mt-3"><b>Add to cart</b> </button>
         </div>
       </div>
     </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
     crossorigin="anonymous"
   ></script>
+  <script src="./assets/js/index.js"></script>
+  </script>
 </html>
